@@ -21,6 +21,8 @@ Route::get('/', function () {
 
 Route::get('/user_entry', [UserEntryController::class, 'index']);
 
+Route::get('/user_entry/{id}', [UserEntryController::class, 'detail']);
+
 Route::get('/user', function () {
     // 3件だけデータを取得
     $users = User::limit(3)->get()->toArray();
