@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserEntryController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/user_entry', [UserEntryController::class, 'index']);
 
 Route::get('/user', function () {
     // 3件だけデータを取得
