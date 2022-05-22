@@ -2,19 +2,25 @@
 
 Tutorial: https://note.com/laravelstudy/m/me6288d51a1b8
 
-## Create project
+## [データーベースの利用](https://note.com/laravelstudy/n/nd1b15530ed0d?magazine_key=me6288d51a1b8)
+
+### Create project
 
 * Create project
-  ```shell
-  composer create-project --prefer-dist laravel/laravel experiment
-  cd experiment
-  ```
+    ```shell
+    composer create-project --prefer-dist laravel/laravel database
+    cd database
+    ```
 * Start server
-  ```shell
-  php -S localhost:8000 -t public
-  ```
+    ```shell
+    php -S localhost:8000 -t public
+    ```
+    or
+    ```shell
+    php artisan serv
+    ```
 
-## [データーベースの利用](https://note.com/laravelstudy/n/nd1b15530ed0d?magazine_key=me6288d51a1b8)
+### Commands
 
 1. Config .env for sqlite database.
 2. テーブルの作成
@@ -62,3 +68,33 @@ Tutorial: https://note.com/laravelstudy/m/me6288d51a1b8
         ```shell
         php artisan db:wipe
         ```
+### MVC
+
+1. Create model
+    ```shell
+    php artisan make:model UserEntry
+    ```
+2. Create controller
+    ```shell
+    php artisan make:controller UserEntryController
+    ```
+## [ユーザーログイン機能の作成 #Laravel頻出パターン #Laravel基礎](https://note.com/laravelstudy/n/n085aac4506bb)
+
+1. Create project
+    ```shell
+    composer create-project --prefer-dist laravel/laravel login_sample
+    cd login_sample
+    ```
+1. Create middleware
+    ```share
+    php artisan make:middleware SimpleAuth
+    ```
+
+## Debug
+
+* Tinker
+    ```shell
+    php artisan tinker
+    ```
+* dump()
+* dd(): dump and die.
