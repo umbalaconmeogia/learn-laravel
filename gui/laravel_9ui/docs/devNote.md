@@ -26,10 +26,25 @@ Tutorial content: https://reffect.co.jp/laravel/laravel9-laravel-ui
     ```
 * Initialize DB
     ```shell
-    touch database/database.sqlite
+    touch database/laravel_9ui.sqlite
     # Edit .env
 
     php artisan migrate
     ```
 * Register from web UI http://localhost:8000/register
 
+### Setup project from code
+
+* Install dependencies
+    ```shell
+    composer install
+    ```
+* Generate APP_KEY in .env
+    ```shell
+    php artisan key:generate
+    ```
+
+## References
+
+* [Laravel9でLaravel UIパッケージを利用して認証設定](https://reffect.co.jp/laravel/laravel9-laravel-ui)
+* [Laravelでsqliteデータベースを使ってみよう](https://reffect.co.jp/laravel/laravel_sqlite)
