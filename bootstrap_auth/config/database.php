@@ -2,9 +2,6 @@
 
 use Illuminate\Support\Str;
 
-// dd(database_path('laravel9_crud.sqlite'));
-// dd(env('DB_DATABASE'));
-
 return [
 
     /*
@@ -41,7 +38,7 @@ return [
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DATABASE_URL'),
-            'database' => database_path(env('DB_DATABASE', 'database.sqlite')),
+            'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],

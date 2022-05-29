@@ -23,7 +23,18 @@ Tutorial source: [Laravel 9 CRUD Application Tutorial Example](https://www.itsol
     ```shell
     php artisan serve
     ```
-* Create migration for `products` table.
-*
 
+## Create CRUD for `products` table.
+
+* Create migration for `products` table.
+    ```shell
+    php artisan make:migration create_products_table --create=products
+    ```
+    Update migration file then run `php artisan migrate`.
+* Create controller and model
+    ```shell
+    php artisan make:controller ProductController --resource --model=Product
+    ```
 ## References
+
+[Laravel 9 Import Export Excel and CSV File Tutorial](https://www.itsolutionstuff.com/post/laravel-9-import-export-excel-and-csv-file-tutorialexample.htm)
