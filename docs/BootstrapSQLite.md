@@ -13,6 +13,7 @@ Assume that we create a Laravel project in the folder `myproject`.
     ```
     DB_CONNECTION=sqlite
     DB_FOREIGN_KEYS=true
+    #DB_HOST=127.0.0.1
     #DB_PORT=3306
     #DB_DATABASE=laravel
     #DB_USERNAME=root
