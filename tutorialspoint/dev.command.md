@@ -20,3 +20,19 @@
     ```shell
     php artisan serve
     ```
+
+## Maintenance mode
+    ```shell
+    php artisan down
+    ```
+
+    ```shell
+    php artisan up
+    ```
+
+## Middleware
+
+* Create Middleware
+    ```shell
+    php artisan make:middleware RoleMiddleware
+    ```
