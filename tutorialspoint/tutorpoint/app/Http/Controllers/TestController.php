@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class TestController extends Controller
 {
     public function index() {
-        echo "<br>Test Controller.";
+        echo "<br>TestController#index()";
     }
 
     public function role() {
