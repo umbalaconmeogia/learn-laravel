@@ -24,3 +24,7 @@ Route::get('role', [TestController::class, 'role'])->middleware('role:editor');
 
 // Access to http://localhost:8000/terminate
 Route::get('terminate', [TerminateController::class, 'index'])->middleware('terminate');
+
+// Access to http://localhost:8000/rest
+// Access to http://localhost:8000/rest/1
+Route::resource('rest', App\Http\Controllers\RestController::class);

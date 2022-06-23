@@ -36,3 +36,10 @@
     ```shell
     php artisan make:middleware RoleMiddleware
     ```
+
+## Controller
+
+* Create RESTful Controller
+    ```shell
+    php artisan make:controller RestController --resource
+    ```
